@@ -1,0 +1,47 @@
+[
+    {
+        "priority": 300,
+        "action": "accept",
+        "saddr": ["172.20.6.7/32"],
+        "daddr": ["172.20.6.6/32"],
+        "sport": {
+            "start": 0,
+            "end": 65535
+        },
+        "dport": {
+            "start": 0,
+            "end": 65535
+        },
+        "protocol": ["tcp"]
+    },
+    {
+        "priority": 200,
+        "action": "drop",
+        "saddr": ["192.168.1.6/32"],
+        "daddr": ["192.168.1.138/32"],
+        "sport": {
+            "start": 0,
+            "end": 65535
+        },
+        "dport":{
+            "start": 0,
+            "end": 65535
+        },
+        "protocol": ["icmp"]
+    },
+    {
+        "priority": 0,
+        "action": "accept",
+        "saddr": ["0.0.0.0/0"],
+        "daddr": ["0.0.0.0/0"],
+        "sport": {
+            "start": 0,
+            "end": 65535
+        },
+        "dport": {
+            "start": 0,
+            "end": 65535
+        },
+        "protocol": ["all"]
+    }
+]

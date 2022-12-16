@@ -1,0 +1,22 @@
+xdp_acl
+xdpacl
+*_bpfeb.go
+*_bpfel.go
+
+log
+acl
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+*.s
+*.ll
+
+# editor
+.vscode/
+
+# generated files
+*_bpfe*
+./xdp_acl
